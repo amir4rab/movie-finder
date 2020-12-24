@@ -2,8 +2,15 @@
 
 .header{
     display: flex;
+    justify-content: space-between;
+    justify-items: center;
+    align-items: center;
     background-color: $red-0;
     color: $background-0;
     font-weight: 700;
-    padding: .75rem .25rem;
+    padding: .75rem .5rem;
+    .img {
+        height: 2rem;
+        object-fit: cover;
+    }
 }
