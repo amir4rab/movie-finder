@@ -29,7 +29,7 @@ import Imdbrating from "../imdbratingComponent/imdbrating.component";
 import Ratinglist from "../ratinglistComponent/ratinglist.component";
 
 
-const MovieComponent = props => {
+const FullMovieComponent = props => {
     const movieTitle = movieData.Title.length > 30 ? movieData.Title : movieData.Title.slice(0,27) + '...';
 
     return (
@@ -117,14 +117,14 @@ const MovieComponent = props => {
                     <h3>
                         Ratings
                     </h3>
-                    <p>
+                    <div>
                         <Ratinglist dataArr={ movieData.Ratings } />
-                    </p>
+                    </div>
                 </div>
             </div>
         </div>
     )
 };
 
-export default MovieComponent;
+export default FullMovieComponent;
 

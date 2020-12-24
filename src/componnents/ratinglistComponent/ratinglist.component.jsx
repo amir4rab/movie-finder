@@ -1,4 +1,4 @@
-import React, { Fragment, memo } from "react";
+import React, { Fragment } from "react";
 
 import Rating from "../ratingComponent/rating.component";
 

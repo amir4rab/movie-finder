@@ -1,3 +1,5 @@
+@import '../../scss/style.scss';
+
 .moviecomponent {
     margin: 1rem;
     .mainDetails {
@@ -31,12 +33,12 @@
             .title {
                 font-size: 1.1rem;
                 font-weight: 700;
-                color: #000000;
+                color: $text-0;
                 height: 25%;
             }
             div {
                 font-size: .8rem;
-                color: #333333;
+                color: $text-1;
             }
 
         }
@@ -51,7 +53,7 @@
             }
             p{  
                 font-size: .8rem;
-                color: #333333;
+                color: $text-1;
                 margin: 0;
             }
         }

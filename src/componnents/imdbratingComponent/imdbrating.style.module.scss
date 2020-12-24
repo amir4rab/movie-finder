@@ -1,5 +1,7 @@
+@import '../../scss/style.scss';
+
 .imdbrating{
-    color: #F1D550 !important;
+    color: $gold-0 !important;
     font-size: inherit;
     .star{
         display: inline;
