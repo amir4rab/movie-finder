@@ -26,6 +26,7 @@ import movieData from "./testData";
 import classes from "./movie.style.module.scss";
 
 import Imdbrating from "../imdbratingComponent/imdbrating.component";
+import Ratinglist from "../ratinglistComponent/ratinglist.component";
 
 
 const MovieComponent = props => {
@@ -108,17 +109,16 @@ const MovieComponent = props => {
                     <h3>
                         Awards
                     </h3>
-                    <p>
+                    <div>
                         { movieData.Awards }
-                    </p>
+                    </div>
                 </div>
                 <div>
                     <h3>
                         Ratings
                     </h3>
                     <p>
-                        {/* { movieData.Ratings } */}
-                        placeholder
+                        <Ratinglist dataArr={ movieData.Ratings } />
                     </p>
                 </div>
             </div>
