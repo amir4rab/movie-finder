@@ -1,10 +1,11 @@
 import classes from './search.style.module.scss';
+import icon from "../../assets/magnifier-icon.svg";
 
 const SearchComponent = props => {
     return (
         <div className={ classes.search }>
             <input type="text"/>
-            <p>&#128270;</p>
+            <p><img src={icon} alt=""/></p>
         </div>
     );
 };

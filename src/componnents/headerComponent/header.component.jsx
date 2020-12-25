@@ -1,14 +1,23 @@
+import { Link } from 'react-router-dom';
 
 import classes from "./header.module.scss";
 import SearchComponent from "../searchComponent/search.component";
-import icon from "../../assets/icon.svg";
 
 const Header = props => {
 
     return (
         <nav className={ classes.header }>
-            <img className={ classes.img } src={icon} alt=""/>
-            <SearchComponent />
+            <ul className={ classes.ul }>
+                <li>
+                    <Link to="/">Home</Link>
+                </li>
+                <li>
+                    <Link to="/Search">Search</Link>
+                </li>
+            </ul>
+            <div className={ classes.SearchComponent }>
+                <SearchComponent  />
+            </div>
         </nav>
     )
 }
